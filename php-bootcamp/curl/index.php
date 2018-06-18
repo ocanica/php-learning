@@ -1,10 +1,13 @@
 <?php
 
 require 'bootstrap.php';
+$amazon = $query['amazon'];
 
-$amazonImages = new FetchImages($provider_url['amazon']);
+$amazonImages = new FetchImages($amazon['url']);
 
 $amazonImages->fetchImages('pocoyo');
 
 $amazonImages->displayImages();
+
+
 
