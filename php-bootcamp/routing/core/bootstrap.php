@@ -14,7 +14,7 @@ App::bind(
 function view($name, $data = []) 
 {
     extract($data);
-    return include "views/{$name}.view.php";
+    return include "app/views/{$name}.view.php";
 }
 
 function redirect($path) 

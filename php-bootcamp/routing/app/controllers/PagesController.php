@@ -2,22 +2,26 @@
 
 namespace App\Controllers;
 
-class PageController {
+class PageController
+{
 
-    public function home() {
+    public function home()
+    {
 
         return view('index');
 
     }
 
-    public function about() {
+    public function about()
+    {
 
         $companyName = 'ocanica';
         return view('about', ['companyName' => $companyName]);
 
     }
 
-    public function contact() {
+    public function contact()
+    {
 
         return view('contact');
 
